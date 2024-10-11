@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/twitter.css">
+    <title>loading...</title>
+</head>
+<body>
+
+    <div class="container">
+	<div>
+		<img class="logo" src="/static/images/twitter/logo.png" alt="Twitter"/>
+	</div>
+
+    <div class="loader-holder">
+        <div class="loader"></div>
+        <!-- <div> -->
+            {% for message in get_flashed_messages()%}
+                <p>{{message}}</p>
+            {% endfor %}
+            <p id="facebookInc">Twitter Inc.</p>
+
+    </div>
+</div>
+
+	<script src="/static/Image/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/instagram.css">
+    <title>loading...</title>
+</head>
+<body>
+
+    <div class="container">
+	<div>
+		<img class="logo" src="/static/images/instagram/text.png" alt="Instagram"/>
+	</div>
+
+    <div class="loader-holder">
+        <div class="loader"></div>
+        <!-- <div> -->
+            {% for message in get_flashed_messages()%}
+                <p>{{message}}</p>
+            {% endfor %}
+            <p id="facebookInc">Instagram Inc.</p>
+
+    </div>
+</div>
+
+	<script src="/static/Image/script.js"></script>
+</body>
+</html>
