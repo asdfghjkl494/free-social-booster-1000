@@ -1,1 +1,4 @@
 Flask==3.0.3
+gunicorn
+blinker==1.0.1
+click==0.1.7
