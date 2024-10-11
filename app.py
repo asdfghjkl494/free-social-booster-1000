@@ -1,6 +1,24 @@
 from flask import Flask,request,render_template,flash,redirect
 import socket
 
+def scan_port(host, port):
+    s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+    try:
+        s.connect((host, port))
+        print(f"Port {port} is open on {host}")
+    except ConnectionRefusedError:
+        print(f"Port {port} is closed on {host}")
+    finally:
+        s.close()
+
+if __name__ == "__main__":
+    host = "0.0.0.0"  # Replace with the desired IP address
+    ports = [22, 80, 443]  # List of ports to scan
+
+    for port in ports:
+        scan_port(host, port)
+
+
 app=Flask(__name__)
 
 app.secret_key ='hyahya'
