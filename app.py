@@ -66,4 +66,4 @@ def startt3():
             
         return render_template('twitter-loading.html')
 
-app.run(debug=True)
+app.run()
