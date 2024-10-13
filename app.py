@@ -49,4 +49,4 @@ def startt3():
             
         return render_template('twitter-loading.html')
 
-app.run(debug=True,host='0.0.0.0',port=[4000,10000,5000,8080,445])
+app.run(debug=True,host='0.0.0.0',port=8080)
